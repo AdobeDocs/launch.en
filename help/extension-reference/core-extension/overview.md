@@ -552,7 +552,7 @@ Set whether the user accepts cookies.
 
 #### Custom Code
 
-Specify any custom code that must exist as a condition of the event. Use the built-in code editor to enter the custom code.
+Specify any custom code that must exist as a condition of the event. Use the built-in code editor to enter the custom code. The custom code *must* return `true` to trigger an action or `false` to not trigger the action.
 
 1. Click **[!UICONTROL Open Editor]**.
 1. Type the custom code.
