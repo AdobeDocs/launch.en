@@ -50,7 +50,9 @@ Available actions for a library in Development state are:
 
   Unassigns the library from its development environment and moves the library to the submitted column for an Approver to work on.
 
-* Delete Deleting a library removes it from Launch. It does not remove the build from the environment,
+* Delete
+
+  Deleting a library removes it from Launch. It does not remove the build from the environment.
 
 ### Submitted {#submitted}
 
@@ -68,7 +70,7 @@ Available actions for a library in Submitted state are:
 
 * Approve for Publishing
 
-  Moves the library to the Approved column for a Publisher to publish
+  Moves the library to the Approved column for a Publisher to publish.
 
 * Reject
 
