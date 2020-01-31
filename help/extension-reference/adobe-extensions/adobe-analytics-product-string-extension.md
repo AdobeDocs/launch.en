@@ -19,13 +19,13 @@ For complete documentation, please visit [https://marketing.adobe.com/resources/
 ### Action Configuration:
 To use this extension, simply add the "Adobe Analytics Product String - Set s.products" action to your rule.
 
-![Action configuration](https://git.corp.adobe.com/crupe/reactor-aa-product-string-builder/blob/master/src/view/configuration/img/screenshot-action-config.png)
+![Action configuration](https://assets.adobedtm.com/extensions/EPa4399deb0bd6401fa5a4d4c07a6ef232/src/view/configuration/img/screenshot-action-config.png)
 
 ### Setting the Standard Product Data:
 
 The next step is to define your data layer variables. Once you configure the action as outlined in the previous step, you'll be presented with the screen below.
 
-![Standard fields](https://git.corp.adobe.com/crupe/reactor-aa-product-string-builder/blob/master/src/view/configuration/img/screenshot-standard-fields.png)
+![Standard fields](https://assets.adobedtm.com/extensions/EPa4399deb0bd6401fa5a4d4c07a6ef232/src/view/configuration/img/screenshot-standard-fields.png)
 
 For each of the data points you want to include in the product string, simply enter the path to the appropriate data layer variable.
 
@@ -55,11 +55,11 @@ digitalData.transaction.item.productInfo.productName
 
 The "price" parameter in the Adobe Analytics product string must reflect the total price for the number of units purchased, not the unit price, for that product. When enabling the "price" field in the extension action you must specify whether your data layer exposes the total price or unit price. When using the unit price, the Adobe Analytics Product String extension will automatically multiply the unit price by the quantity to get the total price and set the product string properly.
 
-![Price type](https://git.corp.adobe.com/crupe/reactor-aa-product-string-builder/blob/master/src/view/configuration/img/screenshot-price-type.png)
+![Price type](https://assets.adobedtm.com/extensions/EPa4399deb0bd6401fa5a4d4c07a6ef232/src/view/configuration/img/screenshot-price-type.png)
 
 ### Custom Events &amp; Merchandising eVars:
 
-![Events and eVars](https://git.corp.adobe.com/crupe/reactor-aa-product-string-builder/blob/master/src/view/configuration/img/screenshot-events-evars.png)
+![Events and eVars](https://assets.adobedtm.com/extensions/EPa4399deb0bd6401fa5a4d4c07a6ef232/src/view/configuration/img/screenshot-events-evars.png)
 
 If your implementation uses custom events or merchandising eVars, follow these steps:
 
@@ -71,7 +71,7 @@ If your implementation uses custom events or merchandising eVars, follow these s
 
 This action must be accompanied by an "Adobe Analytics - Set Variables" action that sets the corresponding success event(s), as well as an "Adobe Analytics - Send Beacon" action. The proper sequence of actions is illustrated below.
 
-![Standard fields](https://git.corp.adobe.com/crupe/reactor-aa-product-string-builder/blob/master/src/view/configuration/img/screenshot-all-actions.png)
+![Standard fields](https://assets.adobedtm.com/extensions/EPa4399deb0bd6401fa5a4d4c07a6ef232/src/view/configuration/img/screenshot-all-actions.png)
 
 ### Requirements:
 
