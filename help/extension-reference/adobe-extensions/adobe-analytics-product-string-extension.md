@@ -4,7 +4,7 @@ The products variable tracks how users interact with products on your site. For 
 
 The products variable should always be set in conjunction with a success event.
 
-The Adobe Analytics Product String Builder extension automatically sets the products variable for you by looping through your data layer, grabbing all the necessary product related data, and formatting it in syntax shown below. You no longer need to write and maintain custom JavaScript to perform these complex actions!
+The Adobe Analytics Product String Builder extension automatically sets the products variable for you by looping through your data layer, grabbing all the necessary product related data, and formatting it in the proper syntax shown below. You no longer need to write and maintain custom JavaScript to perform these complex actions!
 
 ## Syntax of the Products Variable
 
