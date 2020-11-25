@@ -6,6 +6,13 @@ seo-description: Release notes for Adobe Target v2 extension in Adobe Experience
 ---
 
 # Adobe Target v2 Extension Release Notes
+## November 25, 2020
+
+### Adobe Target v2 Extension 0.13.4
+
+* Fixed a bug where mbox parameters were not displaying in the UI
+* Branding updates
+* Updated the at.js version to 2.3.3
 
 ## July 24, 2020
 
