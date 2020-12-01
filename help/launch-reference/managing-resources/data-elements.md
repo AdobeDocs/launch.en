@@ -101,7 +101,7 @@ Any available domain cookie can be referenced in the cookie name field.
 
 Custom JavaScript can be entered into the UI by clicking [!UICONTROL Open Editor] and inserting code into the editor window.
 
-A return statement is necessary in the editor window in order to indicate what value should be set as the data element value. If a return statement is not included, the data element resolvea to `undefined`.  This triggera the fallback to look for a stored value and then a default value if no stored value is present.
+A return statement is necessary in the editor window in order to indicate what value should be set as the data element value. If a return statement is not included, the data element resolves to `undefined`.  This triggers the fallback to look for a stored value, and then a default value if no stored value is present.
 
 **Example:**
 
@@ -113,6 +113,25 @@ if (window.location.pathname == '/') {
   return pageType;
 }
 ```
+
+Custom code can accept the `event` object from the calling rule as an argument. This allows the code to read values that are available in there.
+
+**Example:**
+
+```text
+// `event` is the default object provided by the rule
+
+var eventType = event.$type;
+return eventType; // if this data element is called from a "DOM Ready" event, then `core.dom-ready` is returned
+```
+
+You can then use this in custom scripts by using the `_satellite` object syntax:
+
+`_satellite.getVar('data element name', event);`
+
+When using with the `%..%` notation, you only need to specify the data element name. You don't need to specify `event`.
+
+`%data element name%`
 
 ### DOM attribute
 
@@ -184,7 +203,7 @@ Only the name section is necessary and any special designators like "?" or "=" s
 
 ### Random number
 
-Use this data element to generate a random number. It’s often used for sampling data or creating IDs, such as a Hit ID. The random number can slso be used to obfuscate or salt sensitive data. Some examples might include:
+Use this data element to generate a random number. It’s often used for sampling data or creating IDs, such as a Hit ID. The random number can also be used to obfuscate or salt sensitive data. Some examples might include:
 
 * Generate a Hit ID
 * Concatenate the number to a user token or timestamp to ensure uniqueness
